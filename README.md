@@ -42,7 +42,6 @@ src/
  ┣ main.jsx
 public/
  ┗ favicon.svg
-
 ## Setup
 
 git clone https://github.com/your-username/weather-app.git  
