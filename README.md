@@ -129,12 +129,6 @@ https://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=London&days=7&aqi
 
 ---
 
-## 📸 Screenshots
-
-*(Optional: add images for desktop and mobile UI here)*
-
----
-
 ## 📜 License
 
 This project is open source.
