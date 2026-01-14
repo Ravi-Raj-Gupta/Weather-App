@@ -1,16 +1,63 @@
-# React + Vite
+# 🌤 Weather App — React + WeatherAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather application built with React, Tailwind CSS, and WeatherAPI. It allows users to search for any city, view current weather, today's hourly forecast, air conditions, and a 7-day forecast.
 
-Currently, two official plugins are available:
+Live Demo: https://weather-app-vert-eight-73.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Search weather by city name
+- Today’s hourly forecast
+- 7-day weather forecast
+- Toggle between °C and °F
+- Chance of rain, wind speed, UV index
+- Glassmorphism UI with Tailwind CSS
+- Fully responsive layout
+- Clear search input button
+- Real-time weather data
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React (Vite)
+- Tailwind CSS
+- WeatherAPI
+- Lucide React & React Icons
+- Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+src/
+ ┣ components/
+ ┃ ┣ CurrentWeather.jsx
+ ┃ ┣ TodayForecast.jsx
+ ┃ ┣ WeeklyForecast.jsx
+ ┃ ┣ AirConditions.jsx
+ ┃ ┣ Searchbar.jsx
+ ┃ ┗ Sidebars.jsx
+ ┣ hooks/
+ ┃ ┗ useWeather.js
+ ┣ api/
+ ┃ ┗ weatherApi.js
+ ┣ App.jsx
+ ┣ main.jsx
+public/
+ ┗ favicon.svg
+
+## Setup
+
+git clone https://github.com/your-username/weather-app.git  
+cd weather-app  
+npm install  
+npm run dev  
+
+## API
+
+https://api.weatherapi.com/v1/forecast.json
+
+Example:
+
+https://api.weatherapi.com/v1/forecast.json?key=API_KEY&q=London&days=7&aqi=no&alerts=no
+
+## License
+
+Open-source project.
