@@ -15,7 +15,7 @@ export default function WeeklyForecast({ data }) {
 
     return (
         // <div className="w-[38%] bg-[#202C3C] backdrop-blur-sm rounded-3xl shadow-2xl p-8 mt-14">
-        <div className="w-[38%] h-[92%] bg-[#202C3C] backdrop-blur-sm rounded-3xl shadow-2xl pt-8 px-8 mt-14">
+        <div className="w-[38%] h-[92%] bg-[#202C3C] backdrop-blur-sm rounded-3xl  shadow-2xl pt-8 px-8 mt-14">
             <h1 className="text-gray-400 text-sm font-semibold tracking-wider uppercase mb-8">
                 7-Day Forecast
             </h1>
@@ -24,7 +24,7 @@ export default function WeeklyForecast({ data }) {
                 {forecast.map((day, index) => (
                     <div
                         key={index}
-                        className="flex cursor-pointer items-center justify-between py-[20px] border-b border-slate-700/50 last:border-b-0"
+                        className="flex cursor-pointer items-center justify-between py-[16px] border-b border-slate-700/50 last:border-b-0"
                     >
                         {/* Day */}
                         <div className="w-16 text-gray-400 text-md font-medium">
@@ -39,7 +39,7 @@ export default function WeeklyForecast({ data }) {
                                 {getWeatherIcon(day.day.condition.text)}
                             </div>
 
-                            <div className="text-white font-semibold text-[16px] min-w-[80px]">
+                            <div className="text-white font-semibold text-[14px] min-w-[80px]">
                                 {day.day.condition.text}
                             </div>
                         </div>

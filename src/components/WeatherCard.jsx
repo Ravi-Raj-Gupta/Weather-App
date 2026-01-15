@@ -8,10 +8,10 @@ import WeeklyForecast from './WeeklyForecast';
 import useWeather from '../hooks/useWeather';
 
 const WeatherCard = () => {
-    const [input, setInput] = useState("delhi");
-    const [city, setCity] = useState("delhi");
+    const [input, setInput] = useState("Mumbai");
+    const [city, setCity] = useState("Mumbai");
 
-    const { data, loading, error } = useWeather(city);
+    const { data, error } = useWeather(city);
 
     if (error) return <p className="text-red-400">{error}</p>;
 
@@ -27,6 +27,7 @@ const WeatherCard = () => {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onSubmit={(e) => {
+                                e.preventDefault();
                                 e.preventDefault();
                                 if (!input.trim()) return;
                                 setCity(input);
